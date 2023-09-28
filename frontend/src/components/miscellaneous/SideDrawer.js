@@ -81,6 +81,7 @@ function SideDrawer() {
 
       setLoading(false);
       setSearchResult(data);
+      console.log(searchResult)
     } catch (error) {
       toast({
         title: "Error Occured!",
@@ -142,7 +143,7 @@ function SideDrawer() {
           </Button>
         </Tooltip>
         <Text fontSize="2xl" fontFamily="Work sans">
-          Talk-A-Tive
+          ChitChat
         </Text>
         <div>
           <Menu>
@@ -210,7 +211,7 @@ function SideDrawer() {
               searchResult?.map((user) => (
                 <UserListItem
                   key={user._id}
-                  user={user}
+                  user1={user}
                   handleFunction={() => accessChat(user._id)}
                 />
               ))
