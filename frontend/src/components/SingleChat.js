@@ -81,6 +81,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           },
         };
         setNewMessage("");
+        // socket.emit("new message", data);
         const { data } = await axios.post(
           "/api/message",
           {

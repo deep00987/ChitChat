@@ -160,7 +160,7 @@ const GroupChatModal = ({ children }) => {
               {selectedUsers.map((u) => (
                 <UserBadgeItem
                   key={u._id}
-                  user={u}
+                  user1={u}
                   handleFunction={() => handleDelete(u)}
                 />
               ))}
@@ -174,7 +174,7 @@ const GroupChatModal = ({ children }) => {
                 .map((user) => (
                   <UserListItem
                     key={user._id}
-                    user={user}
+                    user1={user}
                     handleFunction={() => handleGroup(user)}
                   />
                 ))
